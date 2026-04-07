@@ -1,0 +1,8 @@
+drop icmp any any -> any any (msg:"Ping Blocked by Snort IPS"; sid:1000005; rev:1;)
+alert icmp any any -> any any (msg:"ICMP test"; sid:10000001; rev:1;)
+alert tcp any any -> 192.168.193.129 22 (flags:S; msg:"TCP SYN Scan Detected"; sid:1000002; rev:1;)
+alert tcp any any -> $HOME_NET any (flags:S; msg:"Potential TCP SYN Scan (Nmap)"; threshold:type threshold, track by_src, count 20, seconds 5; sid:1000003; rev:1;)
+alert tcp any any -> any any (msg:"Custom Alert - Possible Nmap Scan Detected"; flags:S; threshold:type both, track by_src, count 10, seconds 5; sid:10000004; rev:1;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 21 (msg:"FTP MDTM overflow attempt"; flow:to_server,established; content:"MDTM"; nocase; isdataat:100,relative; pcre:"/^MDTM\s[^\n]{100}/smi"; reference:bugtraq,9751; reference:cve,2001-1021; reference:cve,2004-0330; reference:nessus,12080; classtype:attempted-admin; sid:2546; rev:5;)
+alert ip $EXTERNAL_NET any -> $HOME_NET any (msg:"DOS Jolt attack"; dsize:408; fragbits:M; reference:cve,1999-0345; classtype:attempted-dos; sid:268; rev:4;)
+alert tcp $EXTERNAL_NET any -> $HOME_NET 8080 (msg:"DOS Real Server template.html"; flow:to_server,established; content:"/viewsource/template.html?"; nocase; reference:bugtraq,1288; reference:cve,2000-0474; classtype:attempted-dos; sid:278; rev:5;)
