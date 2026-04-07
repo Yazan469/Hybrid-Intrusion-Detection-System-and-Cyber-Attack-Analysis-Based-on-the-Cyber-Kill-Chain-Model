@@ -24,7 +24,7 @@ This project focuses on the design and implementation of a **Hybrid Intrusion De
 
 ##  Repository Structure
 - `docs/`: Contains the full technical project report (PDF).
-- `configs/`: Snort rules and Zeek configuration snippets.
+- `Scripts/`: Snort rules and Automated response script.
 - `images/`: Network topology and Splunk dashboard screenshots.
 
 ## Project Documentation
