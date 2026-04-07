@@ -4,7 +4,7 @@
 This project focuses on the design and implementation of a **Hybrid Intrusion Detection System (HIDS)** within a virtualized **Mini-SOC** environment. By integrating signature-based detection (**Snort**) with behavioral network analysis (**Zeek**), the system provides comprehensive visibility into multi-stage cyber attacks, mapped directly to the **Cyber Kill Chain** framework.
 
 ##  Key Features
-- **Hybrid Detection Engine:** Combined Snort's signature matching with Zeek's protocol analysis to eliminate blind spots in network traffic.
+- **Hybrid Detection Engineer:** Combined Snort's signature matching with Zeek's protocol analysis to eliminate blind spots in network traffic.
 - **SIEM Centralization:** Automated log ingestion from multiple sources into **Splunk Enterprise** for real-time monitoring and alerting.
 - **Advanced Correlation Logic:** Developed custom SPL queries in Splunk to correlate fragmented network events into cohesive attack stages.
 - **Automated Mitigation:** Implemented a proactive defense layer using **Bash scripts and iptables** to automatically block malicious IPs based on high-severity IDS triggers.
