@@ -12,9 +12,9 @@ This project focuses on the design and implementation of a **Hybrid Intrusion De
 ##  Technical Infrastructure (Lab Setup)
 - **Virtualization:** Managed via **VMware Workstation**, simulating a corporate network segment.
 - **Security Node:** Ubuntu Server hosting Snort, Zeek, and Splunk Forwarders.
-- **Target Environment:** Metasploitable & Windows nodes for realistic attack surface simulation.
+- **Target Environment:** Ubuntu victim with  exploitable services for realistic attack surface simulation.
 - **Attacker Node:** Kali Linux for executing multi-stage attack scenarios (Recon, Exploitation, Exfiltration).
-- **Network Topology:** Images/topo.png
+- **Network Topology:** (images/topo.png)
 
 ##  Tool Stack
 - **Monitoring:** Snort, Zeek (formerly Bro).
@@ -27,6 +27,6 @@ This project focuses on the design and implementation of a **Hybrid Intrusion De
 - `configs/`: Snort rules and Zeek configuration snippets.
 - `images/`: Network topology and Splunk dashboard screenshots.
 
-## 📥 Project Documentation
+## Project Documentation
 You can download the full detailed report (Arabic/Technical English) from the link below:
 [**Download Full Project Report (PDF)**](https://github.com/Yazan469/Hybrid-Intrusion-Detection-System-and-Cyber-Attack-Analysis-Based-on-the-Cyber-Kill-Chain-Model/tree/main) 
