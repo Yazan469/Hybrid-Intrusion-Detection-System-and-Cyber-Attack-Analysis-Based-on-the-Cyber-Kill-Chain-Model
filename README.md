@@ -14,6 +14,7 @@ This project focuses on the design and implementation of a **Hybrid Intrusion De
 - **Security Node:** Ubuntu Server hosting Snort, Zeek, and Splunk Forwarders.
 - **Target Environment:** Metasploitable & Windows nodes for realistic attack surface simulation.
 - **Attacker Node:** Kali Linux for executing multi-stage attack scenarios (Recon, Exploitation, Exfiltration).
+- **Network Topology:** Images/topo.png
 
 ##  Tool Stack
 - **Monitoring:** Snort, Zeek (formerly Bro).
